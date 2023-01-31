@@ -6,199 +6,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <link rel="stylesheet" href="#style.css">
-     
-
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    
+    <link rel="stylesheet" href="../stylesheet/from_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>Registration</header>
+  <div class="container">
+    <header class="heading_bold text-center">Registration</header>
+    <span class="title heading_medium">Personal Details:</span>
+    <div class="line"></div>
+    <form id="registration" action="./qualification_details.html" method="GET">
+      <div class="details">
+        <div class="input-field">
+            <div class="box">
+                <label>First Name</label>
+                <input id="user-name-first" type="text" class="input-box error-field" placeholder="Enter first name" required>
+            </div>
+            <div class="box">
+                <label>Last Name</label>
+            <input id="user-name-last" type="text" class="input-box error-field" placeholder="Enter last name" required>
+            </div>
+            
+        </div>
 
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
+        <div class="input-field">
+            <div class="box">
+              <label>Date of Birth</label>
+              <input id="date-of-birth" type="date" class="input-box p-10 error-field" placeholder="MM/DD/YYYY" required>
+            </div>
+            <div class="box">
+            <label>Email</label>
+            <input id="email" name="email" type="email" class="input-box p-10 error-field" placeholder="Enter your email" required>
+            </div>
+        </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Name</label>
-                            <input type="text" placeholder=" First " required>
-                        
-                        
-                            <input type="text" placeholder=" Last " required>
-                        </div>
-                    </div>
+            <div class="input-field">
+                <div class="box">
+                <label>Father Name</label>
+                  <input id="father-name-first" type="text" class="input-box error-field" placeholder="Enter first name" required>
+                </div>
+                <div class="box">
+                  <label>Last Name</label>
+                  <input id="father-name-last" type="text" class="input-box error-field" placeholder="Enter last name" required>   
+                </div>
+            </div>
 
-                        <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="MM/DD/YYYY" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                            
-                        </div>
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Father Name</label>
-                                <input type="text" placeholder=" First " required>
-                                <input type="text" placeholder=" Last " required>
-                                
-                            </div>
-    
-                            <div class="input-field">
-                                <label>Mother Name</label>
-                                <input type="text" placeholder=" First " required>
-                            <input type="text" placeholder=" Last " required>
-                                
-                            </div>
-
-                            <div class="input-field">
-                                <label>Gender</label>
-                                <select required>
-                                    <option disabled selected>Select gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-
-                                    <div class="input-field">
-                                        <label>Nationality</label>
-                                        <input type="text" placeholder="Enter nationality" required>
-                                    </div>
-
-                                    <div class="fields">
-                                        <div class="input-field">
-                                            <label>Home Address </label>
-                                            <input type="text" placeholder="Permanent or Temporary" required>
-                                        </div>
-                
-                                        <div class="input-field">
-                                            <label></Address></label>
-                                            <input type="text" placeholder="Enter your Street Address" required>
-                                        </div>
-                
-                                        
-                                        <div class="input-field">
-                                            <label>Country</label>
-                                            <input type="text" placeholder="Enter your Country" required>
-                                        </div>
-                
-                                        <div class="input-field">
-                                            <label>City</label>
-                                            <input type="text" placeholder="Enter your City" required>
-                                        </div>
-                                    </div>
-                                </div>
-                
-    
-
-                        <div class="input-field">
-                            <label>Telephone-Home</label>
-                            <input type="number" placeholder=" ### ### #### " required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Telephone-Mobile</label>
-                            <input type="number" placeholder=" ### ### #### " required>
-                        </div>
-                        
-                            </select>
-                        </div>
-
-                        
-
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
+            <div class="input-field">
+                <div class="box">
+                <label>Mother Name</label>
+                  <input id="mother-name-first" type="text" class="input-box error-field" placeholder="Enter first name" required>
+                </div>
+                <div class="box">
+                  <label>Last Name</label>
+                  <input id="mother-name-last" type="text" class="input-box error-field" placeholder="Enter last name" required> 
                 </div> 
             </div>
 
-            <div class="form second">
+            <div class="input-field">
+              <div class="box">
+                <label>Gender</label>
+                  <div class="radio_btn">
+                    <input type="radio" value="male" class="radio_text"  name="gender" required>Male
+                    <input type="radio" value="female" class="radio_text" name="gender" required>Female
+                    <input type="radio" value="other" class="radio_text" name="gender" required>Other
+                  </div>
+                </div>
+                <div class="box">
+                    <label>Nationality</label>
+                    <input id="nationality" type="text" class="input-box error-field" placeholder="Enter nationality" required>
+                </div>
+            </div>
+
+
+                <div class="input-field center-vertical">
+                    <label>Home Address </label>
+                    <textarea id="address" class="text-area error-field" rows="4" cols="90" placeholder="Enter your address" required></textarea>
+                </div>
 
                 <div class="input-field">
-                    <label>HSC Institution Name</label>
-                    <input type="text" placeholder="HSC Instituion Name" required>
+                    <div class="box">
+                      <label>Country</label>
+                      <input id="country" type="text" class="input-box error-field" placeholder="Enter your Country" required>
+                    </div>
+                    <div class="box">
+                    <label>City</label>
+                      <input id="city" type="text" class="input-box error-field" placeholder="Enter your City" required>
+                    </div>
                 </div>
-                
 
-                    <select required>
-                        <option disabled selected>Select Board</option>
-                        <option>ICSC</option>
-                        <option>CBSC</option>
-                        <option>State Board</option>
-                </select>
+        <div class="input-field">
+            <div class="box">
+                <label>Telephone-Home</label>
+                <input id="home-number" type="number" class="input-box error-field" placeholder=" ### ### #### " required>    
             </div>
-
-                    <div class="input-field">
-                       <label>SSC Institution Name</label>
-                      <input type="text" placeholder="SSC Instituion Name" required>
-                    </div>
-                
-
-                    <select required>
-                        <option disabled selected>Select Board</option>
-                        <option>ICSC</option>
-                        <option>CBSC</option>
-                        <option>State Board</option>
-                        </select>
-                    </div>
-
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Currently Pursuing</label>
-                                <input type="text" placeholder="currently Pursuing" required>
-                            </div>
-    
-                            <div class="fields">
-                                <div class="input-field">
-                                    <label>Current Institution name</label>
-                                    <input type="text" placeholder="Institution Name" required>
-                                </div>
-
-
-        
-                                <div class="fields">
-                                    <div class="input-field">
-                                        <label>Current Backlogs</label>
-                                    
-
-                                        <select required>
-                                            <option disabled selected>Select</option>
-                                            <option>yes</option>
-                                            <option>no</option>
-                                        
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form Third"></div>
-            
-                            
-                    <div class="buttons">
-                        <div class="backBtn">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
-                        </div>
-                    </div>
-                
-                        
-                        <button class="sumbit">
-                            <span class="btnText">Submit</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div> 
-            </form>
-        
-              </div>
-
-    <script src="script.js"></script>
+            <div class="box">
+            <label>Telephone-Mobile</label>
+              <input id="mobile-number" type="number" class="input-box error-field" placeholder=" ### ### #### " required>
+            </div>
+        </div>
+        <p id="err-user"></p>
+    <div class="footer">
+        <button id="personal-info-btn" class="nextBtn">Next</button>
+    </div>
+</div> 
+</div>
+    </form>
+    </div> 
+    <script src="../script/user_registraion.js"></script> 
+    <script src="../script/validation.js"></script>                            
 </body>
 </html>
 

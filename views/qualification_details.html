@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/from_style.css">
+</head>
+<body>
+<div class="container">
+    <form id ='registration' action="./document_details.html" method="GET">
+        <header class="heading_bold text-center">Registration</header>
+        <span class="title heading_medium">Qualification Details:</span>
+        <input type="hidden" name="email" id="email" value="">
+        <div class="line"></div>
+            <div class="input-field mt-3">
+             <div class="box">
+                <label>HSC Institution Name</label>
+                <input id="hsc-name" type="text" class="input-box error-field" placeholder="HSC Instituion Name" required>
+              </div>
+              <div class="box w-3">
+                <label>HSC Board</label>
+                <select id="hsc-board" class="select-field error-field" required>
+                    <option value="" disabled selected>Select Board</option>
+                    <option value="icsc">ICSC</option>
+                    <option value="cbsc">CBSC</option>
+                    <option value="state board">State Board</option>
+                </select>
+              </div>
+            </div>
+        
+            <div class="input-field">
+                <div class="box">
+                    <label>HSC Board Percentage</label>
+                    <input id="hsc-percentage" type="number" class="input-box p-10 error-field" placeholder="Percentage" required>
+                </div>
+            </div>
+
+            <div class="input-field mt-3">
+                <div class="box">
+                    <label>SSC Institution Name</label>
+                    <input id="ssc-name" type="text" class="input-box error-field" placeholder="SSC Instituion Name" required>
+                </div>
+                <div class="box w-3">
+                    <label>SSC Board</label>
+                    <select id="ssc-board" class="select-field error-field" required>
+                        <option value="" disabled selected>Select Board</option>
+                        <option value="icsc">ICSC</option>
+                        <option value="cbsc">CBSC</option>
+                        <option value="state board">State Board</option>
+                    </select>
+                </div>
+            </div>
+         
+            <div class="input-field">
+                <div class="box">
+                    <label>SSC Board Percentage</label>
+                    <input id="ssc-percentage" type="number" class="input-box error-field" placeholder="Percentage" required>
+                </div>
+            </div>
+
+
+            <div class="input-field mt-3">
+                <div class="box">
+                    <label>Currently Pursuing</label>
+                    <input id="current-pursuing" type="text" class="input-box error-field" placeholder="currently Pursuing" required>
+                </div>
+        
+                <div class="box w-3">
+                    <label>Current Institution name</label>
+                    <input id="current-institution" type="text" class="input-box error-field" placeholder="Institution Name" required>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="box">
+                    <label>Overall Percentage</label>
+                    <input id="overall-percentage" type="number" class="input-box p-10 error-field" placeholder="Percentage" required>
+                </div>
+            </div>
+
+            <div class="input-field mt-3">
+                <div class="box w-4">
+                    <label>Current Backlogs</label>
+                    <select id="backlog" class="select-field p-5 error-field" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div>
+            </div>
+            <p id="err-user"></p>
+            <div class="footer">
+                <button id="qualification-btn" class="nextBtn">Next</button>
+            </div>
+        </form>
+    </div>
+    <script src="../script/user_qualification.js"></script>
+    <script src="../script/validation.js"></script>   
+    </body>
+</html>
+                    

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/from_style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="../views/success.html">
+        <header class="heading_bold text-center">Registration</header>
+        <span class="title heading_medium">File Upload:</span>
+        <div class="line"></div>
+        <input type="hidden" name="email" id="email" value="">
+            <div class="input-field mt-3">
+             <div class="file-section">
+                <label>Recent passport size photograph (image less than 4MB):</label>
+                <input type="file" id="passport" required>
+             </div>
+            </div>
+
+            <div class="input-field mt-3">
+                <div class="file-section">
+                   <label>HSC mark sheet (image,PDF or docs size less than 4MB):</label>
+                   <input type="file" id="hsc-mark-sheet" required>
+                </div>
+            </div>
+
+            <div class="input-field mt-3">
+                <div class="file-section">
+                   <label>SSC mark sheet (image,PDF or docs size less than 4MB):</label>
+                   <input type="file" id="ssc-mark-sheet" required>
+                </div>
+            </div>
+
+            <div class="input-field mt-3">
+                <div class="file-section">
+                   <label>All semester marksheet in a single PDF or docs (image less than 10MB):</label>
+                   <input type="file" id="all-sem"  required>
+                </div>
+            </div>
+            <p id="err-user"></p>
+            <div class="footer">
+                <input id="file-btn" type="submit" class="nextBtn">
+            </div>
+    </form>
+  </div>
+  <script src="../script/file_upload.js"></script>
+  <script src="../script/validation.js"></script>   
+    </body>
+</html>
+                    
