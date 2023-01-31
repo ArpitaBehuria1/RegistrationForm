@@ -108,7 +108,6 @@ function validate_user(user_first_name,user_last_name,user_birth,user_email,fath
   }
 }
 function validate_qualification(hsc_name,hsc_board,hsc_percentage,ssc_name,ssc_board,ssc_percentage,current_pursuing,current_institution,overall_percentage,backlog){
-  alert('inside function');
   if(hsc_name.value.length == 0)
   {
     error_user.textContent = "error: HSC Institution Name can't be empty";
